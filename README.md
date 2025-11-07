@@ -1,4 +1,4 @@
-# Meowinator 😺
+# Meowinator
 
 A Chrome extension that replaces all YouTube images with adorable random cats!
 
