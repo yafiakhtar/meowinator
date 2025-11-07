@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "meowinator",
+  "version": "1.0.0",
+  "host_permissions": [
+    "https://cataas.com/*"
+  ],
+  "content_scripts":[
+    {
+        "matches": ["https://www.youtube.com/*"],
+        "js": ["content.js"]
+    }
+  ]
+}
