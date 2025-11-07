@@ -1,14 +1,22 @@
 {
   "manifest_version": 3,
-  "name": "meowinator",
+  "name": "Meowinator",
   "version": "1.0.0",
+  "description": "Replace all YouTube images with adorable cats!",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
   "host_permissions": [
     "https://cataas.com/*"
   ],
-  "content_scripts":[
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
     {
-        "matches": ["https://www.youtube.com/*"],
-        "js": ["content.js"]
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"]
     }
   ]
 }
